@@ -7,9 +7,9 @@ const MealIndexBySearchService = require("../services/meal/MealIndexBySearchServ
 const MealShowService = require("../services/meal/MealShowService");
 const MealDeleteService = require("../services/meal/MealDeleteService");
 
-const Meal_IngredientRepository = require("../repositories/mealIngredient/MealIngredientRepository");
-const MealIngredientCreateService = require("../services/IngredientMeal/IngredientMealCreateService");
-const MealIngredientUpdateService = require("../services/IngredientMeal/SSIngredientMealUpdateService");
+const Meal_IngredientRepository = require("../repositories/meal_ingredient/MealIngredientRepository");
+const MealIngredientCreateService = require("../services/meal_ingredient/IngredientMealCreateService");
+const MealIngredientUpdateService = require("../services/meal_ingredient/IngredientMealUpdateService");
 
 class MealsControllers {
   async create(request, response) {
