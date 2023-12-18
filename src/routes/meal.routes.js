@@ -1,6 +1,6 @@
 const { Router } = require("express");
 
-const MealsControllers = require("../controllers/MealsControllers");
+const MealsControllers = require("../controllers/MealsController");
 const MealImageController = require("../controllers/MealImageController");
 
 const ensureIsAdmin = require("../middlewares/ensureIsAdmin");

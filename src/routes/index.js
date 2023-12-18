@@ -4,8 +4,8 @@ const userRoutes = require("./users.routes");
 const sessionsRoutes = require("./sessions.routes");
 const orderRoutes = require("./order.routes");
 const mealRoutes = require("./meal.routes");
-const ingredientRoutes = require("./ingredient.routes");
-const favoriteRoutes = require("./favorite.routes");
+const ingredientRoutes = require("./ingredients.routes");
+const favoriteRoutes = require("./favorites.routes");
 
 const routes = Router();
 

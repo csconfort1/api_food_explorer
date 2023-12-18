@@ -1,6 +1,6 @@
 const {Router} = require("express");
 
-const IngredientsControllers = require("../controllers/IngredientsControllers");
+const IngredientsControllers = require("../controllers/IngredientsController");
 const IngredientImageController = require("../controllers/IngredientImageController");
 
 const ensureIsAdmin = require("../middlewares/ensureIsAdmin");
