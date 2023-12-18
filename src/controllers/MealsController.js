@@ -3,7 +3,7 @@ const IngredientsRepository = require("../repositories/ingredients/IngredientRep
 const MealRepository = require("../repositories/meal/MealRepository");
 const MealCreateService = require("../services/meal/MealCreateService");
 const MealUpdateService = require("../services/meal/MealUpdateService");
-const MealIndexBySearchService = require("../services/meal/MealIndexBySearchService");
+const MealIndexBySearchService = require("../services/meal/MealIndexServiceSearch");
 const MealShowService = require("../services/meal/MealShowService");
 const MealDeleteService = require("../services/meal/MealDeleteService");
 

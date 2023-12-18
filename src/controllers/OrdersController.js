@@ -9,7 +9,7 @@ const OrderMealRepository = require("../repositories/order_meal/OrderMealReposit
 const OrderMealCreateService = require("../services/order_meal/OrderMealCreateService");
 
 const MealRepository = require("../repositories/meal/MealRepository");
-const MealIndexByIdService = require("../services/meal/MealIndexByIdService");
+const MealIndexServiceId = require("../services/meal/MealIndexServiceId");
 
 const UserRepository = require("../repositories/user/UserRepository");
 const UserCheckIfIsAdmin = require("../services/user/UserCheckIfIsAdmin");
@@ -33,9 +33,9 @@ class OrdersControllers {
       orderMealRepository
     );
 
-    const mealIndexByIdService = new MealIndexByIdService(mealRepository);
+    const mealIndexServiceId = new MealIndexServiceId(mealRepository);
 
-    const foundMeals = await mealIndexByIdService.execute(meals_sent);
+    const foundMeals = await moveToealIndexServiceId.execute(meals_sent);
 
     const orderId = await orderCreateService.execute({
       user_id,
