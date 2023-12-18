@@ -12,7 +12,7 @@ const MealRepository = require("../repositories/meal/MealRepository");
 const MealIndexServiceId = require("../services/meal/MealIndexServiceId");
 
 const UserRepository = require("../repositories/user/UserRepository");
-const UserCheckIfIsAdmin = require("../services/user/UserCheckIfIsAdmin");
+const UserCheckIfIsAdmin = require("../services/user/UserCheckAdmin");
 
 class OrdersControllers {
   async create(request, response) {
