@@ -8,8 +8,8 @@ const routes = Router();
 const favoritesController = new FavoritesController();
 
 routes
-  .post("/:meal_id", ensureAuthenticated, ensureNotAdmin, ensuresMealRegistered, favoritesControllers.create)
+  .post("/:meal_id", ensureAuthenticated, ensureNotAdmin, ensuresMealRegistered, favoritesController.create)
   .get("/", ensureAuthenticated, favoritesController.index)
-  .delete("/:meal_id", ensureAuthenticated, ensureNotAdmin, favoritesControllers.delete);
+  .delete("/:meal_id", ensureAuthenticated, ensureNotAdmin, favoritesController.delete);
 
 module.exports = routes;
