@@ -10,14 +10,10 @@ const routes = require("./routes");
 const app = express();
 app.use(express.json());
 app.use(cors());
-
+app.use(routes);
 
 app.use("/files/meals", express.static(uploadConfig.MEALS_FOLDER));
 app.use("/files/ingredients", express.static(uploadConfig.INGREDIENTS_FOLDER));
-
-app.use(routes);
-
-const PORT = process.env.PORT || 5173;
 
 app.use((error, request, response, next) => {
     if(error instanceof AppError){
@@ -35,4 +31,7 @@ app.use((error, request, response, next) => {
     });
 });
 
-app.listen(PORT, () => console.log("Server is running on PORT:", PORT));
+const PORT = process.env.SERVE_PORT || 5173;
+
+app.listen(PORT, () => {
+    console.log(`Server is running on PORT: ${PORT}`)});
