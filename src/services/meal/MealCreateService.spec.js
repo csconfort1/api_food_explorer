@@ -19,6 +19,7 @@ describe("MealCreateService", () => {
       description: "Salada",
       category: "Principais",
       price: "19,97",
+      
     };
 
     const result = await mealCreateService.execute(meal);
@@ -32,6 +33,7 @@ describe("MealCreateService", () => {
        description: "Salada",
        category: "Principais",
        price: "19,97",
+     
     };
 
     await mealCreateService.execute(meal);

@@ -7,9 +7,7 @@ class MealCreateService {
 
   async execute({ title, category, description, price }) {
     if (!title || !category || !description || !price) {
-      throw new AppError(
-        "Sem dados suficientes para o cadastro de um novo prato."
-      );
+      throw new AppError("Sem dados suficientes para o cadastro de um novo prato.");
     }
 
     const NameRegistered = await this.mealRepository.findByTitle(
